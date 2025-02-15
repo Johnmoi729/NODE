@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses | College Website</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+
+    <header>
+        <div class="banner">
+            <h1>Our Courses</h1>
+            <p>Explore a variety of courses to enhance your skills.</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for a course...">
+        <button onclick="searchCourses()">Search</button>
+    </section>
+
+    <section class="course-list">
+        <div class="course">
+            <img src="images/course1.jpg" alt="Course 1">
+            <h3>Web Development</h3>
+            <p>Learn HTML, CSS, JavaScript, and more!</p>
+            <span>$199</span>
+            <a href="course-detail.html">View Details</a>
+        </div>
+
+        <div class="course">
+            <img src="images/course2.jpg" alt="Course 2">
+            <h3>Data Science</h3>
+            <p>Master Python, machine learning, and AI.</p>
+            <span>$299</span>
+            <a href="course-detail.html">View Details</a>
+        </div>
+
+        <div class="course">
+            <img src="images/course3.jpg" alt="Course 3">
+            <h3>Graphic Design</h3>
+            <p>Adobe Photoshop, Illustrator, and more.</p>
+            <span>$149</span>
+            <a href="course-detail.html">View Details</a>
+        </div>
+
+        <div class="course">
+            <img src="images/course3.jpg" alt="Course 3">
+            <h3>Graphic Design</h3>
+            <p>Adobe Photoshop, Illustrator, and more.</p>
+            <span>$149</span>
+            <a href="course-detail.html">View Details</a>
+        </div>
+    </section>
+
+    <div class="pagination">
+        <a href="#" class="prev">&laquo; Prev</a>
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#" class="next">Next &raquo;</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 College Website. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function searchCourses() {
+            let input = document.getElementById("searchInput").value.toLowerCase();
+            let courses = document.querySelectorAll(".course");
+            
+            courses.forEach(course => {
+                let title = course.querySelector("h3").innerText.toLowerCase();
+                if (title.includes(input)) {
+                    course.style.display = "block";
+                } else {
+                    course.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+<footer>
+    <div class="footer-content">
+        <div class="footer-column">
+            <h3>About Us</h3>
+            <p>We are a top-ranked college providing high-quality education.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: aptech@gmail.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Ton That Thuyet, HaNoi, VietNam</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 College Website. All rights reserved.</p>
+    </div>
+</footer>
+</html>
