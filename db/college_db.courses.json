@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "67b02d2a109911eeadce84b8"
+  },
+  "name": "Node.js",
+  "description": "Khóa học Node.js cơ bản",
+  "price": 499000,
+  "duration": "8 tuần"
+},
+{
+  "_id": {
+    "$oid": "67b02d2a109911eeadce84b9"
+  },
+  "name": "React",
+  "description": "Xây dựng ứng dụng web",
+  "price": 599000,
+  "duration": "6 tuần"
+},
+{
+  "_id": {
+    "$oid": "67b085ab539ea2429d7bfdd7"
+  },
+  "name": "Lập trình Web với React",
+  "description": "Xây dựng ứng dụng web hiện đại bằng React",
+  "price": 600000,
+  "duration": "8 tuần"
+},
+{
+  "_id": {
+    "$oid": "67b085ab539ea2429d7bfdd8"
+  },
+  "name": "Thiết kế đồ họa với Photoshop",
+  "description": "Học Photoshop từ cơ bản đến nâng cao",
+  "price": 400000,
+  "duration": "4 tuần"
+},
+{
+  "_id": {
+    "$oid": "67b085ab539ea2429d7bfdd9"
+  },
+  "name": "Quản trị mạng Cisco CCNA",
+  "description": "Chứng chỉ quản trị mạng Cisco CCNA",
+  "price": 800000,
+  "duration": "10 tuần"
+},
+{
+  "_id": {
+    "$oid": "67b085ab539ea2429d7bfdda"
+  },
+  "name": "Machine Learning cơ bản",
+  "description": "Giới thiệu về Machine Learning với Python",
+  "price": 700000,
+  "duration": "12 tuần"
+}]
